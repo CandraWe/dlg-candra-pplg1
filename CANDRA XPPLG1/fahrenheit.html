@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tugas No 1 konversi celcius ke Fahrenheit
+        var celcius = prompt("Masukkan Nilai Suhu Celcius");
+        var konversi =9/5 * celcius+ 32;
+        document.write(konversi + '<br/>');
+
+        //Tugas ke 2 Konversi Fahrenheit ke Celcius
+        var fahrenheit = prompt("Masukkan Nilai Suhu Fahrenheit");
+        var Konversi = 5/9 * (fahrenheit - 32);
+        document.write(Konversi + '<br/>');
+
+        //Tugas No 3 konveersi waktu ke detik
+        var jam = 1;
+        var menit = 2;
+        var detik = 30;
+        var konversi_jam = 3600 * jam;
+        var konversi_menit = 60 * menit;
+        document.write(konversi_jam + konversi_menit + detik + '<br/>');
+
+        //Tugas no 4 tahun kabisat atau bukan tahun kabisat 
+        var tahun = prompt("Masukkan Tahun");
+        var kabisat = tahun % 4;
+        if(kabisat == 0){
+            document.write("Ini Tahun Kabisat");
+        }
+        else{
+            document.write("Ini Bukan Tahun Kabisat");
+        }
+    </script>
+</body>
+</html>
