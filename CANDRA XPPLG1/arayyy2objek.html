@@ -8,10 +8,7 @@
 </head>
 <body>
     <script>
-        //aray
-        //var orang = []
-
-        //objek
+         //objek
         //key(kata kunci = nama,umur,jurusan)
         //value(Candra,16,PPLG1)
         
@@ -23,13 +20,20 @@
         laptop:
             processor,GPU,PowerSupply,system_operasi,ram
         */
-        var laptop = {Processor : "Intel I20", VGA : "Nvidia RTX 5080" , PowerSupply : "ORANG" , system_operasi : "ROBOT" , Ram :16}
+        var laptop = {Processor : "Intel I20", VGA : "Nvidia RTX 5080" ,PowerSupply : "ORANG" ,  system_operasi : "ROBOT" ,  Ram :16 ,  Penyimpanan : {merek :"WD" , kapasitas : "1TB" , type : "SSD"}}
         
         document.write(" Processor =" + laptop.Processor + '<br/>');
         document.write(" VGA =" +laptop.VGA + '<br/>');
         document.write(" PowerSupply =" +laptop.PowerSupply + '<br/>');
         document.write(" system_operasi =" +laptop.system_operasi + '<br/>');
         document.write(" Ram =" +laptop.Ram + '<br/>' );
+
+        //
+        var siswa ={Nama = "Candra Wijaya",Kelas = "X",Jurusan = "PPLG1",Nilai : {MTK : 95 , Inggris : 95 ,DLG :95}}
+        document.write(" Nama =" + siswa.Nama + '<br/>');
+        document.write(" Kelas =" + siswa.Kelas + '<br/>');
+        document.write(" Jurusan =" + siswa.Jurusan + '<br/>');
+        document.write(" Nilai =" + siswa.Nilai + '<br/>');
     </script>
 </body>
 </html>
