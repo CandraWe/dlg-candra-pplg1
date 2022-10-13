@@ -84,10 +84,25 @@
             },
 
         ]
+
+        /*
+        for (i in list_siswa){
+            document.write(i + "br/>");
+        }
+        */
+
+        var list_nama = ["Ilham", "Cecep", "Andi"];
+
+        list_nama.forEach (Nama => {
+            document.write(Nama + '<br/>');
+        });
+
+        /*
         document.write("Nama:" + list_siswa[1].Nama + '<br/>');
         document.write("Kelas:" + list_siswa[1].Kelas + '<br/>');
         document.write("Umur:" + list_siswa[1].Umur + '<br/>');
         document.write("Nilai:" + list_siswa[1].Nilai  + '<br/>');
+        */
 
         /*Menampilkan Semua data list_siswa
             list_siswa
@@ -95,7 +110,7 @@
             Kelas:
             Umur:
             Nilai:
-        */
+        
        document.write("<h1>LIST SISWA </h1>");
        document.write("Nama:" + list_siswa[0].Nama + '<br/>');
        document.write("Kelas:" + list_siswa[0].Kelas + '<br/>');
@@ -165,6 +180,8 @@
                 document.write("Pacar" +i+ " <br/>");
             }
     //unlimited looping
+            */
+    
     </script>
 </body>
 </html>
