@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama-Nama</title>
+</head>
+<body>
+    <script>
+        //while
+        /*
+        var i = 0;
+        while(i < 5){
+            //program yang akan diulang
+            document.write(i + "<br/>");
+            i++;
+        }=
+        */
+       var konfirmasi = confirm("Apakah Mau Masukkan Nama Lagi??"); //true / false (boolean)
+       var list_Nama =[];
+
+       //Jika Mau Masukkan Nama
+        while(konfirmasi){ //True / Benar / 1
+             //Tampilkan prompt masukkan nama
+             var data = prompt("Masukkan Nama!!");
+             //memasukkan data nama ke array nama
+             list_Nama.push(data);
+             konfirmasi = confirm("Apakah Mau Masukkan Nama Lagi ??");
+        }
+    //tampilkan list array nama
+    document.write(list_Nama);
+    </script>
+</body>
+</html>
