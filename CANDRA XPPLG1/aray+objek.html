@@ -84,33 +84,29 @@
             },
 
         ]
-
-        /*
-        for (i in list_siswa){
-            document.write(i + "br/>");
-        }
-        
-
-        var list_nama = ["Ilham", "Cecep", "Andi"];
-
-        list_nama.forEach (Nama => {
-            document.write(Nama + '<br/>');
-        });
-        */
-
-        /*
         document.write("Nama:" + list_siswa[1].Nama + '<br/>');
         document.write("Kelas:" + list_siswa[1].Kelas + '<br/>');
         document.write("Umur:" + list_siswa[1].Umur + '<br/>');
         document.write("Nilai:" + list_siswa[1].Nilai  + '<br/>');
-        */
+        document.write('<hr/>');
+        document.write('<hr/>')
 
+        list_nama.forEach (Nama => {
+            document.write(Nama + '<br/>');
+        }
+        );
+        list_nama.forEach (Kelas => {
+            document.write(Kelas + '<br/>');
+        }
+        );
+        
         /*Menampilkan Semua data list_siswa
             list_siswa
             Nama:
             Kelas:
             Umur:
             Nilai:
+            */
         
        document.write("<h1>LIST SISWA </h1>");
        document.write("Nama:" + list_siswa[0].Nama + '<br/>');
@@ -173,7 +169,7 @@
        document.write("Umur:" + list_siswa[11].Umur + '<br/>');
        document.write("Nilai:" + list_siswa[11].Nilai  + '<br/>');
        document.write("<hr/>")
-        */
+        
 
     //1.Deklarasi / menentukan angka awal,
     //2.Batas Pengulangan,

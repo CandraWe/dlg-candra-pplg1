@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //counted loop
+        //bisa ditentukan jumlah perulangannya
+        
+
+
+        //uncounted loop
+        //tidak bisa ditentukan jumlah perulangannya
+        
+
+        //array
+        var kkm = 75;
+        var list_siswa = [
+            {
+                Nama :"Fahar", 
+                Kelas: "10 MIPA", 
+                Nilai_MTK:89,
+                Nilai_Inggris:95,
+                Nilai_Fisika:100,
+            },
+            {
+                Nama :"Gifa", 
+                Kelas: "12 MIPA", 
+                Nilai_MTK:75,
+                Nilai_Inggris:94,
+                Nilai_Fisika:90,
+            }
+        ,
+        {
+                Nama :"Binar", 
+                Kelas: "11 MIPA", 
+                Nilai_MTK:56,
+                Nilai_Inggris:89,
+                Nilai_Fisika:92,
+            },
+            ]
+        
+            /*data data siswa dari
+            Nama
+            Kelas
+            Nilai
+                Nilai_MTK
+                Nilai_Inggris
+                Nilsi_Fisika
+            */
+            document.write("<h1>LIST NAMA SISWA</h1>");
+            list_siswa.forEach(nama =>{
+                document.write("<br>Nama: "+nama.Nama+"<br>");
+                document.write("Kelas: "+nama.Kelas+"<br>");
+                document.write("Nilai MTK: "+nama.Nilai_MTK+"<br>");
+                document.write("Nilai Inggris: "+nama.Nilai_Inggris+"<br>");
+                document.write("Nilai Fisika: "+nama.Nilai_Fisika+"<br>");
+                
+
+                if(nama.Nilai_MTK > kkm){
+                    document.write(" Status: LULUS")
+                }else{
+                    document.write("Status: Tidak Lulus")
+                }
+                document.write("<hr/>");
+            });
+            
+    </script>
+</body>
+</html>
