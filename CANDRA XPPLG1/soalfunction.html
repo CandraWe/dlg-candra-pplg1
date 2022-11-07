@@ -8,19 +8,21 @@
 </head>
 <body>
     <script>
+        //Kamis,31 November 2022
         function Sapa_orang(Text1, Text2)
         {
-            document.write("Haloo " + Text1,"Nilai Kamu " + Text2 +"<br>")
+            //document.write("Haloo " + Text1," Nilai Kamu " + Text2 +"<br>")
+            document.write(`Halo ${Text1}` , `Nilai Kamu ${80}` +"<br>");
         }
 
-        Sapa_orang("Sabila, ", 80);
+        Sapa_orang("Ilham, ", 80);
 
         //
 
         function Penjumlahan(angka1, angka2, angka3)
         {
             var Jumlah = angka1+ angka2 + angka3;
-            document.write("Hasil Penjumlahan Adalah : " + Jumlah)
+            document.write("Hasil Penjumlahan Adalah : " + Jumlah +"<br>")
         }
         Penjumlahan(10, 20, 20);
 
@@ -28,8 +30,38 @@
 
         function Bandingkan(Nilai1, Nilai2)
         {
-            document.write()
+            /*document.write(Nilai1 + " Lebih Besar dari " + Nilai2 +"<br>")
+            document.write(Nilai2 + " Lebih kecil dari " + Nilai1)*/
+
+        if (Nilai1 < Nilai2){
+            document.write("Nilai1 Lebih besar dari Nilai2");
+        }else{
+            document.write("Nilai2 Lebih kecil dari Nilai1");
         }
+
+            document.write("<br>");
+        }
+
+        Bandingkan(80, 10)
+
+
+
+        //Senin,07 November 2022
+
+        function main(Benda1 , Benda2){    //Menggunakan operator perbandingan dan logika
+            if(Benda1 =="Batu" && Benda2 =="Gunting"){
+                document.write("Anda Menang");
+            }else(document.write("Anda Kalah"))
+        }
+        main("Gunting", "Batu")
+
+
+        //main(prompt("Batu atau Gunting"), prompt("Batu atau Gunting"));//anda menang
+        //main("Batu", "Kertas");//anda kalah
+        //main("Batu", "Batu");//anda seri
+
+
+
     </script>
 </body>
 </html>
