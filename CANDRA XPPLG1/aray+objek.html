@@ -91,14 +91,10 @@
         document.write('<hr/>');
         document.write('<hr/>')
 
-        list_nama.forEach (Nama => {
-            document.write(Nama + '<br/>');
-        }
-        );
-        list_nama.forEach (Kelas => {
-            document.write(Kelas + '<br/>');
-        }
-        );
+        list_siswa.forEach (orang => {
+            document.write(orang.Nama + '<br/>');
+            document.write(orang.Kelas +"<br/>")
+        });
         
         /*Menampilkan Semua data list_siswa
             list_siswa

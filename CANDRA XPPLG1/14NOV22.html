@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Pembeli
+            nama 
+            barang 
+                nama
+                harga
+                jumlah
+
+                nama
+                harga
+                jumlah
+        */
+
+
+        var Pembeli = [
+                {
+                    Barang:"Sirop",Harga: "15000", Banyak: "1",
+                },
+                {
+                    Barang:"Roti",Harga: "2500",Banyak:"1",
+                },
+                {
+                    Barang:"Energen",Harga: "2500",Banyak:"1",
+                }
+                ]
+
+        Pembeli.forEach(Pembeli =>{
+            document.write("Barang:"+Pembeli.Barang+"<br>");
+            document.write("Harga:"+Pembeli.Harga+"<br>");
+            document.write("Banyak:"+Pembeli.Banyak+"<br>");
+            document.write("<br>")
+        });
+    </script>
+</body>
+</html>
