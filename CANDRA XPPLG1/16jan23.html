@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var kelinci = {
+            Nama : "Alfin",
+            Jenis : "Anggora",
+            Bulu : {
+                Bulu : "Lebat/tebal",
+                Warna_bulu : "Hitam dan Putih",
+            },
+            Warna_Mata : "Hitam",
+            Kaki : {
+                Jumlah_kaki : 2,
+                Warna_kaki : "Hitam Putih"
+            },
+            Tangan : {
+                Jumlah_tangan : 2,
+                Warna_tangan_kiri : "Hitam",
+                Warna_tangan_kanan : "Putih",
+            },
+            Telinga : {
+                Jumlah_telinga : 2,
+                Warna_telinga : "Luar Putih dan Dalam Merah Muda",
+            },
+            Tidur : function(){
+                return " tidur di rumput,dan lantai";
+            },
+            Dipanggil : function(){
+                return " menghampiri dengan cara lompat lompat";
+            },
+
+        }
+
+        document.write('Kelinci ini namanya ' + kelinci.Nama);
+        document.write(' berjenis ' + kelinci.Jenis);
+        document.write('Memiliki kaki ' + kelinci.Kaki(0));
+        document.write(' berwarna ' + kelinci.Kaki(1));
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        document.write(kelinci.Nama);
+        document.write(kelinci.Dipanggil());
+
+
+    </script>
+</body>
+</html>
