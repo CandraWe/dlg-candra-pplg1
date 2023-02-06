@@ -123,11 +123,10 @@
                     this.Kelas = Kelas;
                     this.Jurusan = Jurusan;
                     this.Tahun_lahir = Tahun_lahir;
+                    this.Tahun_sekarang = 2023;
                 }
                 umur (){
-                    var Umur = this.Tahun_lahir;
-                    var tahun_sekarang = 2023;
-                    return (umur-tahun_sekarang)
+                    return (this.Tahun_sekarang - this.Tahun_lahir)
                 }
 
             }
@@ -138,8 +137,8 @@
 
 
             document.write("Umur " + Siswa1.Nama + Siswa1.umur() +"<br>");
-            document.write("Umur " + Siswa2.Nama +"<br>");
-            document.write("Umur " + Siswa3.Nama +"<br>");
+            document.write("Umur " + Siswa2.Nama + Siswa2.umur() +"<br>");
+            document.write("Umur " + Siswa3.Nama + Siswa3.umur() +"<br>");
 
 
 
