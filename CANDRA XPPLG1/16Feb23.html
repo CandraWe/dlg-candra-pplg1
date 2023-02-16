@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Getter dan Setter adalah function
+        // cara menampilkannya tinggal ditambahkan get atau set
+        
+        // Getter untuk mengambil data / menampilkan data
+        // Setter untuk memasukkan nilai kedlm atribut
+
+        class siswa {
+            #nama = "Ucup Ahoyy"; //atribut nama nya private krn ada #
+            #kkm = 75; // kkm tdk boleh kurang dari 10
+
+            // jika tdk ingin dirubah namanya maka jangan pakai set
+            set nama(nama){       // (nama) adalah parameter
+                this.#nama = nama;
+        }
+
+
+        //jika tidak ingin dilihat tdk usah pakai get
+            get nama (){
+            return this.#nama;
+        }
+        set kkm(kkm){
+            // kalau kkm kurg dari 10
+            // tampilkan "kkm harus lebih dari 10"
+            if (kkm < 10){
+                document.write("Udah dibantu Google tetep ajah dibawah kkm gimana sih ");
+                return;  // untuk menstop program dibawah
+            }else{
+                document.write("Kamu Lulus dengan nilai hasil Google ");
+                return;
+            }
+
+            this.#kkm = kkm;
+        }
+
+        get kkm(){
+            return "yahaha";
+        }
+    }
+
+
+    //var UcupCuy = new siswa();
+    // UcupCuy.nama = "Ucup"; // merujuk ke function
+    // UcupCuy.kkm = prompt("Masukkan Nilainya!!!");
+
+
+    // kalau ingin menampilkannya menggunakan get
+    // document.write(UcupCuy.nama)
+    //document.write(UcupCuy.kkm)
+
+
+
+    // LATIHAN
+
+    class usser{
+
+        //tampilkan method Get Set
+        #ussername;
+
+        //Password panjangnya lebih dari 8
+        // tampilannya "********"
+        #password;
+
+        //umur tdk boleh kurang dari 18 tahun
+        #umur;
+
+        //email harus ada simbol tag @ nya
+        #email;
+
+        //ussername
+        set ussername(NamaLU){
+            this.#ussername = NamaLU;
+        }
+        get ussername(){
+            return this.#ussername;
+        }
+
+        //possword
+
+        set password (pw){
+            if( pw.length < 8){
+                document.write("Masukkan password dengan lebih 8 karakter!!!");
+            }
+            this.#password = pw;
+        }
+        get password(){
+            return this.#password;
+        }
+
+
+    }
+
+    //untuk menmapilkan jumlah huruf dari kata
+    // var kalimat = "Hai"; 
+    // document.write(kalimat.length)  //nanti akan muncul angka 3 krn kata Hai ada 3 huruf
+
+    var Biodata = new usser;
+    Biodata.ussername = "Ussername = " + "Ucup";
+    Biodata.password = "Password = " + 12345;
+    Biodata.umur = "Umur = " + 19;
+    Biodata.email = "Email = ";
+
+    document.write(Biodata.password);
+
+    </script>
+</body>
+</html>
