@@ -29,10 +29,11 @@
             get nama (){
             return this.#nama;
         }
-        set kkm(kkm){
+        
+        set kkm(KKM){
             // kalau kkm kurg dari 10
             // tampilkan "kkm harus lebih dari 10"
-            if (kkm < 10){
+            if (KKM < 10){
                 document.write("Udah dibantu Google tetep ajah dibawah kkm gimana sih ");
                 return;  // untuk menstop program dibawah
             }else{
@@ -40,7 +41,7 @@
                 return;
             }
 
-            this.#kkm = kkm;
+            this.#kkm = KKM;
         }
 
         get kkm(){
@@ -55,7 +56,7 @@
 
 
     // kalau ingin menampilkannya menggunakan get
-    // document.write(UcupCuy.nama)
+    //document.write(UcupCuy.nama)
     //document.write(UcupCuy.kkm)
 
 
@@ -89,12 +90,40 @@
 
         set password (pw){
             if( pw.length < 8){
-                document.write("Masukkan password dengan lebih 8 karakter!!!");
+                document.write(" *password harus lebih dari 8 karakter!!!" + "<br>");
             }
             this.#password = pw;
         }
         get password(){
             return this.#password;
+        }
+
+        // umur
+
+        set umur(usia){
+            if( usia < 18){
+                document.write(" *kamu masih bocil" + "<br>");
+            }
+            
+
+            this.#umur = usia;
+        }
+        get umur(){
+            return this.#umur;
+        }
+
+        // email
+
+        set email(gmail){
+            if(gmail.includes('@')){
+                this.#email = gmail;
+            }
+            else{
+                document.write("Harus menggunakan '@' " + "<br>")
+            }
+        }
+        get email(){
+            return this.#email;
         }
 
 
@@ -106,11 +135,15 @@
 
     var Biodata = new usser;
     Biodata.ussername = "Ussername = " + "Ucup";
-    Biodata.password = "Password = " + 12345;
-    Biodata.umur = "Umur = " + 19;
-    Biodata.email = "Email = ";
+    Biodata.password = "12345";
+    Biodata.umur = "10";
+    Biodata.email ="abcdef@gmail.com";
 
-    document.write(Biodata.password);
+    document.write(Biodata.ussername + "<br>");
+    document.write(Biodata.password + "<br>");
+    document.write(Biodata.umur + "<br>");
+    document.write(Biodata.email + "<br>");
+
 
     </script>
 </body>
